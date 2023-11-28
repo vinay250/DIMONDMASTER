@@ -8,3 +8,38 @@ CHOOSE THE LICENSE MIT Permissions Commercial use Modification Distribution Priv
 
 how run setup file python setup.py install #another way you can mention -e - in your requirements file and can run pip install -r requirements.txt
 
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+
+##### local cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=a/fsdsmendtoend.mlflow \
+MLFLOW_TRACKING_USERNAME=\
+MLFLOW_TRACKING_PASSWORD= \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=
+
+export MLFLOW_TRACKING_USERNAME=
+
+export MLFLOW_TRACKING_PASSWORD=
+
+```
+
+
+### DVC cmd
+- dvc init
+- dvc repro
+- dvc dag
+
