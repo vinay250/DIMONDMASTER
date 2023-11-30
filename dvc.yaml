@@ -1,0 +1,16 @@
+stages:
+  training:
+    cmd: python src2/dimondmaster/pipelines/training_pipeline.py
+    deps:
+      - src2/dimondmaster/pipelines/training_pipeline.py
+      - src2/dimondmaster/components/data_ingestion.py
+      - src2/dimondmaster/components/data_transformation.py
+      - src2/dimondmaster/components/model_trainer.py
+      - src2/dimondmaster/components/model_evaluation.py
+
+    outs:
+      - artifacts/raw.csv
+      - artifacts/test.csv
+      - artifacts/train.csv
+      - artifacts/preprocessor.pkl
+      - artifacts/model.pkl
